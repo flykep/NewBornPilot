@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquisto Auto — Newborn Pilot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><i class="fas fa-car-side"></i><span>Newborn<strong>Pilot</strong></span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Patente <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="patente-teoria.html"><i class="fas fa-book"></i> Teoria</a>
+                        <a href="patente-pratica.html"><i class="fas fa-car"></i> Pratica</a>
+                    </div>
+                </div>
+                <a href="come-funziona-auto.html" class="nav-link">Come Funziona l'Auto</a>
+                <a href="manutenzione.html" class="nav-link">Manutenzione</a>
+                <a href="tutorial.html" class="nav-link">Tutorial</a>
+                <a href="acquisto.html" class="nav-link active">Acquisto Auto</a>
+                <a href="assicurazione.html" class="nav-link">Assicurazione</a>
+                <a href="multe.html" class="nav-link">Multe</a>
+                <a href="curiosita.html" class="nav-link">Curiosità</a>
+                <a href="risorse.html" class="nav-link">Risorse</a>
+            </div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb"><a href="../index.html">Home</a><i class="fas fa-chevron-right"></i><span>Acquisto Auto</span></div>
+            <div class="page-hero-badge"><span class="section-number-badge">Sezione 06</span></div>
+            <h1><i class="fas fa-shopping-cart"></i> Guida all'<span class="gradient-text">Acquisto</span></h1>
+            <p>La guida definitiva per non farti fregare e scegliere l'auto giusta</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="content-layout">
+                <aside class="content-sidebar">
+                    <div class="sidebar-nav sticky-sidebar">
+                        <h4><i class="fas fa-bookmark"></i> Indice</h4>
+                        <ul>
+                            <li><a href="#configuratore" class="sidebar-link">6.1 — Configuratore intelligente</a></li>
+                            <li><a href="#nuova-usata" class="sidebar-link">6.2 — Nuova vs Usata vs Km0</a></li>
+                            <li><a href="#ispezione" class="sidebar-link">6.3 — Ispezionare un'auto usata</a></li>
+                            <li><a href="#costi-nascosti" class="sidebar-link">6.4 — Costi nascosti</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="content-main">
+                    <!-- Configuratore -->
+                    <section id="configuratore" class="content-section">
+                        <h2><span class="section-num">6.1</span> Il configuratore intelligente</h2>
+                        <p>Rispondi a semplici domande e scopri le auto più adatte alle tue esigenze:</p>
+
+                        <div class="configurator-preview">
+                            <div class="config-form">
+                                <div class="config-group">
+                                    <label><i class="fas fa-euro-sign"></i> Budget</label>
+                                    <select id="budget">
+                                        <option value="">Seleziona...</option>
+                                        <option value="5000">Sotto 5.000€</option>
+                                        <option value="10000">5.000 - 10.000€</option>
+                                        <option value="20000">10.000 - 20.000€</option>
+                                        <option value="35000">20.000 - 35.000€</option>
+                                        <option value="50000">Oltre 35.000€</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label><i class="fas fa-road"></i> Utilizzo principale</label>
+                                    <select id="utilizzo">
+                                        <option value="">Seleziona...</option>
+                                        <option value="citta">Città</option>
+                                        <option value="extra">Extraurbano</option>
+                                        <option value="auto">Autostrada</option>
+                                        <option value="misto">Misto</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label><i class="fas fa-gas-pump"></i> Alimentazione</label>
+                                    <select id="alimentazione">
+                                        <option value="">Seleziona...</option>
+                                        <option value="benzina">Benzina</option>
+                                        <option value="diesel">Diesel</option>
+                                        <option value="gpl">GPL</option>
+                                        <option value="ibrido">Ibrido</option>
+                                        <option value="elettrico">Elettrico</option>
+                                        <option value="boh">Non so, consigliami</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label><i class="fas fa-car"></i> Dimensioni</label>
+                                    <select id="dimensioni">
+                                        <option value="">Seleziona...</option>
+                                        <option value="city">Citycar</option>
+                                        <option value="util">Utilitaria</option>
+                                        <option value="berl">Berlina</option>
+                                        <option value="suv">SUV-Crossover</option>
+                                        <option value="sw">Station Wagon</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label><i class="fas fa-id-card"></i> Neopatentato?</label>
+                                    <select id="neopatentato">
+                                        <option value="">Seleziona...</option>
+                                        <option value="si">Sì (vincolo 55 kW/t)</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-primary" onclick="showConfigResult()">
+                                    <i class="fas fa-search"></i> Trova la tua auto
+                                </button>
+                            </div>
+                            <div id="configResult" class="config-result" style="display:none;">
+                                <h4><i class="fas fa-check-circle"></i> In base alle tue risposte, ecco alcune categorie consigliate:</h4>
+                                <p id="configText"></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Nuova vs Usata -->
+                    <section id="nuova-usata" class="content-section">
+                        <h2><span class="section-num">6.2</span> Nuova vs. Usata vs. Km0</h2>
+                        <div class="three-comparison">
+                            <div class="comp-card">
+                                <h3><i class="fas fa-star"></i> Auto Nuova</h3>
+                                <div class="pros">
+                                    <h5>Pro</h5>
+                                    <ul>
+                                        <li>✅ Garanzia piena (2-7 anni)</li>
+                                        <li>✅ Personalizzazione completa</li>
+                                        <li>✅ Ultimi standard sicurezza</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Contro</h5>
+                                    <ul>
+                                        <li>❌ Svalutazione 15-25% immediata</li>
+                                        <li>❌ Costo più alto</li>
+                                        <li>❌ Tempi di consegna</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="comp-card">
+                                <h3><i class="fas fa-history"></i> Auto Usata</h3>
+                                <div class="pros">
+                                    <h5>Pro</h5>
+                                    <ul>
+                                        <li>✅ Prezzo più basso</li>
+                                        <li>✅ Svalutazione già avvenuta</li>
+                                        <li>✅ Disponibilità immediata</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Contro</h5>
+                                    <ul>
+                                        <li>❌ Rischio problemi nascosti</li>
+                                        <li>❌ Garanzia limitata</li>
+                                        <li>❌ Tecnologia meno aggiornata</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="comp-card">
+                                <h3><i class="fas fa-tags"></i> Km0 / Semestrali</h3>
+                                <div class="pros">
+                                    <h5>Pro</h5>
+                                    <ul>
+                                        <li>✅ Praticamente nuove</li>
+                                        <li>✅ Sconti 10-25%</li>
+                                        <li>✅ Garanzia ancora valida</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Contro</h5>
+                                    <ul>
+                                        <li>❌ Non scegli colore/allestimento</li>
+                                        <li>❌ Disponibilità variabile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ispezione -->
+                    <section id="ispezione" class="content-section">
+                        <h2><span class="section-num">6.3</span> Come ispezionare un'auto usata</h2>
+                        <div class="checklist-box">
+                            <h4><i class="fas fa-clipboard-check"></i> Checklist completa</h4>
+                            <ul class="checklist">
+                                <li><i class="fas fa-check-square"></i> <strong>Carrozzeria:</strong> ruggine, differenze colore tra pannelli, allineamento</li>
+                                <li><i class="fas fa-check-square"></i> <strong>Interni:</strong> usura sedili, volante, pedali (km scalati?)</li>
+                                <li><i class="fas fa-check-square"></i> <strong>Motore:</strong> rumore regolare, olio pulito, nessuna perdita</li>
+                                <li><i class="fas fa-check-square"></i> <strong>Pneumatici:</strong> usura uniforme (altrimenti problemi assetto)</li>
+                                <li><i class="fas fa-check-square"></i> <strong>Prova su strada:</strong> freni, sterzo, cambio, rumori, vibrazioni</li>
+                                <li><i class="fas fa-check-square"></i> <strong>Documenti:</strong> km con tagliandi, revisioni, fermi amministrativi</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Costi nascosti -->
+                    <section id="costi-nascosti" class="content-section">
+                        <h2><span class="section-num">6.4</span> Costi nascosti dell'auto</h2>
+                        <div class="cost-grid">
+                            <div class="cost-item"><i class="fas fa-shield-alt"></i><h4>Assicurazione</h4><p>Neopatentato? Paghi molto di più. Classe, zona, tipo auto e età influenzano il premio.</p></div>
+                            <div class="cost-item"><i class="fas fa-file-invoice-dollar"></i><h4>Bollo auto</h4><p>Tassa regionale annuale, calcolata in base ai kW e alla classe ambientale.</p></div>
+                            <div class="cost-item"><i class="fas fa-gas-pump"></i><h4>Carburante</h4><p>15 km/l vs 10 km/l = centinaia di euro di differenza all'anno.</p></div>
+                            <div class="cost-item"><i class="fas fa-wrench"></i><h4>Manutenzione</h4><p>Tagliandi, olio, filtri, pastiglie. Auto complesse costano di più.</p></div>
+                            <div class="cost-item"><i class="fas fa-tire"></i><h4>Pneumatici</h4><p>Un treno di 4 gomme: dai 200€ ai 600€+ secondo misura e brand.</p></div>
+                            <div class="cost-item"><i class="fas fa-chart-line"></i><h4>Svalutazione</h4><p>Il costo nascosto più grande. Auto da 20.000€ → dopo 5 anni vale 8.000-10.000€.</p></div>
+                        </div>
+                    </section>
+
+                    <div class="page-navigation">
+                        <a href="tutorial.html" class="page-nav-btn prev">
+                            <i class="fas fa-arrow-left"></i>
+                            <div><span>Precedente</span><strong>Tutorial Pratici</strong></div>
+                        </a>
+                        <a href="assicurazione.html" class="page-nav-btn next">
+                            <div><span>Prossimo</span><strong>Assicurazione</strong></div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2024 Newborn Pilot.</p></div></div></footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <script src="js/main.js"></script>
+</body>
+</html>
